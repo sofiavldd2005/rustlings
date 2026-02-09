@@ -1,14 +1,14 @@
 fn animal_habitat(animal: &str) -> &str {
     // TODO: Fix the compiler error in the statement below.
-    if let identifier = if animal == "crab" {
-        "Beach"
+    let identifier = if animal == "crab" {
+        1
     } else if animal == "gopher" {
-        "Burrow"
+        2
     } else if animal == "snake" {
-        "Desert"
+        3
     } else {
-        "Unknown"
-    };
+        4
+    }; // if we use if to assign a value to a variable, the inteire block must end with a semicolon
 
     // Don't change the expression below!
     if identifier == 1 {

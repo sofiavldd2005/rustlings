@@ -4,10 +4,11 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
-    if a > b { //in Rust the "if" statement always returns a value, and that is the value that the
-        //function returns 
+    if a > b {
+        //in Rust the "if" statement always returns a value, and that is the value that the
+        //function returns
         a
-    }else{
+    } else {
         b
     }
 }
