@@ -6,10 +6,11 @@
 
 fn main() {
     // TODO: Fix the Clippy lint in this line.
-    let pi = 3.14;
+    use std::f64::consts::PI;
+    let pi = PI;
     let radius: f32 = 5.0;
 
-    let area = pi * radius.powi(2);
+    let area = pi as f32 * radius.powi(2);
 
     println!("The area of a circle with radius {radius:.2} is {area:.5}");
 }
